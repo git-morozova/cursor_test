@@ -1,0 +1,99 @@
+.contacts {
+  background: #f8f9fa;
+}
+
+.contacts-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contacts-content h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.contacts-info {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.phone-link {
+  color: #3498db;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.phone-link:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.contacts-warning {
+  background: #fff3cd;
+  border: 2px solid #ffc107;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: left;
+}
+
+.contacts-warning p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #856404;
+  margin-bottom: 15px;
+}
+
+.contacts-warning p:last-child {
+  margin-bottom: 0;
+}
+
+.contacts-warning strong {
+  color: #856404;
+}
+
+@media (max-width: 768px) {
+  .contacts-content h2 {
+    font-size: 28px;
+  }
+
+  .contacts-info {
+    padding: 30px 20px;
+  }
+
+  .contact-item {
+    font-size: 16px;
+  }
+
+  .phone-link {
+    font-size: 20px;
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .contacts-warning {
+    padding: 20px;
+  }
+
+  .contacts-warning p {
+    font-size: 14px;
+  }
+}
+
