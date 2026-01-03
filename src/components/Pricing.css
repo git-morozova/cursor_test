@@ -1,11 +1,11 @@
 .pricing {
-  background: #fff;
+  background: var(--color-background);
 }
 
 .pricing-title {
   font-size: 36px;
   margin-bottom: 50px;
-  color: #2c3e50;
+  color: var(--color-accent);
   text-align: center;
 }
 
@@ -16,17 +16,17 @@
 }
 
 .pricing-card {
-  background: #f8f9fa;
+  background: var(--color-background-light);
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px var(--color-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
 }
 
 .pricing-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 25px var(--color-shadow-hover);
 }
 
 .pricing-card img {
@@ -38,7 +38,7 @@
 .pricing-card h3 {
   font-size: 20px;
   margin: 20px;
-  color: #2c3e50;
+  color: var(--color-accent);
   min-height: 60px;
   display: flex;
   align-items: center;
@@ -48,7 +48,7 @@
 .price {
   font-size: 28px;
   font-weight: bold;
-  color: #3498db;
+  color: var(--color-accent);
   margin: 20px;
   padding-bottom: 20px;
 }

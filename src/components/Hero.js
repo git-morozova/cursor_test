@@ -40,9 +40,9 @@ const Hero = () => {
         />
         <div className="hero-overlay">
           <div className="hero-content animate-on-scroll">
-            <h1>Остеопракт Евгений Шемякин</h1>
+            <h1>Остеопракт<br />Евгений Шемякин</h1>
             <p className="hero-subtitle">
-              Избавлю от болей, поставлю Ваши органы «на место». 
+              Избавлю от болей, поставлю Ваши органы «на место». <br />
               Опыт в оздоровлении – более 20 лет
             </p>
             <button className="btn-primary" onClick={scrollToContacts}>

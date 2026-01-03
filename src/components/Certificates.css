@@ -1,11 +1,11 @@
 .certificates {
-  background: #fff;
+  background: var(--color-background);
 }
 
 .certificates-title {
   font-size: 36px;
   margin-bottom: 40px;
-  color: #2c3e50;
+  color: var(--color-accent);
   text-align: center;
 }
 
@@ -22,7 +22,7 @@
 .carousel-container {
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px var(--color-shadow);
 }
 
 .carousel-track {
@@ -53,16 +53,16 @@
   height: 50px;
   border-radius: 50%;
   font-size: 30px;
-  color: #2c3e50;
+  color: var(--color-accent);
   cursor: pointer;
   z-index: 10;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 10px var(--color-shadow);
 }
 
 .carousel-btn:hover {
-  background: #fff;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background: var(--color-background-light);
+  box-shadow: 0 4px 15px var(--color-shadow-hover);
 }
 
 .carousel-btn.prev {
@@ -91,7 +91,7 @@
 }
 
 .dot.active {
-  background: #3498db;
+  background: var(--color-accent);
   transform: scale(1.2);
 }
 

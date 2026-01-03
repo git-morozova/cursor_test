@@ -1,5 +1,5 @@
 .contacts {
-  background: #f8f9fa;
+  background: var(--color-background);
 }
 
 .contacts-content {
@@ -11,21 +11,21 @@
 .contacts-content h2 {
   font-size: 36px;
   margin-bottom: 40px;
-  color: #2c3e50;
+  color: var(--color-accent);
 }
 
 .contacts-info {
-  background: #fff;
+  background: var(--color-background-light);
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px var(--color-shadow);
   margin-bottom: 30px;
 }
 
 .contact-item {
   font-size: 18px;
   margin-bottom: 20px;
-  color: #555;
+  color: var(--color-text-secondary);
 }
 
 .contact-item:last-child {
@@ -33,7 +33,7 @@
 }
 
 .phone-link {
-  color: #3498db;
+  color: var(--color-accent);
   font-size: 24px;
   font-weight: bold;
   margin-left: 10px;
@@ -41,7 +41,7 @@
 }
 
 .phone-link:hover {
-  color: #2980b9;
+  color: var(--color-accent-hover);
   text-decoration: underline;
 }
 

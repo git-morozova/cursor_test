@@ -1,11 +1,11 @@
 .reviews {
-  background: #f8f9fa;
+  background: var(--color-background);
 }
 
 .reviews-title {
   font-size: 36px;
   margin-bottom: 50px;
-  color: #2c3e50;
+  color: var(--color-accent);
   text-align: center;
 }
 
@@ -16,16 +16,16 @@
 }
 
 .review-card {
-  background: #fff;
+  background: var(--color-background-light);
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px var(--color-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .review-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 25px var(--color-shadow-hover);
 }
 
 .review-stars {
@@ -37,14 +37,14 @@
 .review-text {
   font-size: 16px;
   line-height: 1.8;
-  color: #555;
+  color: var(--color-text-secondary);
   margin-bottom: 20px;
   font-style: italic;
 }
 
 .review-name {
   font-weight: 600;
-  color: #2c3e50;
+  color: var(--color-accent);
   text-align: right;
 }
 

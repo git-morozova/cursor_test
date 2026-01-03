@@ -1,5 +1,5 @@
 .about {
-  background: #fff;
+  background: var(--color-background);
 }
 
 .about-content {
@@ -18,7 +18,7 @@
 .about-why h2 {
   font-size: 36px;
   margin-bottom: 25px;
-  color: #2c3e50;
+  color: var(--color-accent);
   text-align: center;
 }
 
@@ -26,7 +26,7 @@
 .about-why p {
   font-size: 18px;
   line-height: 1.8;
-  color: #555;
+  color: var(--color-text-secondary);
   margin-bottom: 20px;
   text-align: justify;
 }
@@ -43,7 +43,7 @@
   width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px var(--color-shadow);
   transition: transform 0.3s ease;
 }
 

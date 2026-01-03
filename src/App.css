@@ -1,6 +1,7 @@
 .App {
   width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 
 /* Анимации появления */
@@ -47,4 +48,5 @@
 /* Плавная прокрутка */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }

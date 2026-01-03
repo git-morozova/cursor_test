@@ -1,5 +1,5 @@
 .services {
-  background: #f8f9fa;
+  background: var(--color-background);
 }
 
 .services-content {
@@ -10,14 +10,14 @@
 .services-content h2 {
   font-size: 36px;
   margin-bottom: 30px;
-  color: #2c3e50;
+  color: var(--color-accent);
   text-align: center;
 }
 
 .services-text p {
   font-size: 18px;
   line-height: 1.8;
-  color: #555;
+  color: var(--color-text-secondary);
   margin-bottom: 20px;
   text-align: justify;
 }

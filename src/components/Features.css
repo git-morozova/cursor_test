@@ -1,5 +1,5 @@
 .features {
-  background: #f8f9fa;
+  background: var(--color-background);
 }
 
 .features-grid {
@@ -9,17 +9,17 @@
 }
 
 .feature-card {
-  background: #fff;
+  background: var(--color-background-light);
   padding: 40px 30px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px var(--color-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 25px var(--color-shadow-hover);
 }
 
 .feature-icon {
@@ -30,11 +30,11 @@
 .feature-card h3 {
   font-size: 24px;
   margin-bottom: 15px;
-  color: #2c3e50;
+  color: var(--color-accent);
 }
 
 .feature-card p {
-  color: #666;
+  color: var(--color-text-light);
   line-height: 1.8;
 }
 
