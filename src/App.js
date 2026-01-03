@@ -1,22 +1,22 @@
-import React from 'react';
-import './App.css';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import About from './components/About';
-import Services from './components/Services';
-import Pricing from './components/Pricing';
-import AboutDoctor from './components/AboutDoctor';
-import Certificates from './components/Certificates';
-import Reviews from './components/Reviews';
-import CTA from './components/CTA';
-import BeforeAfter from './components/BeforeAfter';
-import Contacts from './components/Contacts';
-import Map from './components/Map';
+import React from 'react'
+import './App.css'
+import { Header } from './components/Header/Header'
+import { Hero } from './components/Hero/Hero'
+import { Features } from './components/Features/Features'
+import { About } from './components/About/About'
+import { Services } from './components/Services/Services'
+import { Pricing } from './components/Pricing/Pricing'
+import { AboutDoctor } from './components/AboutDoctor/AboutDoctor'
+import { Certificates } from './components/Certificates/Certificates'
+import { Reviews } from './components/Reviews/Reviews'
+import { CTA } from './components/CTA/CTA'
+import { BeforeAfter } from './components/BeforeAfter/BeforeAfter'
+import { Contacts } from './components/Contacts/Contacts'
+import { Map } from './components/Map/Map'
 
-function App() {
+export function App () {
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
       <Hero />
       <Features />
@@ -31,7 +31,7 @@ function App() {
       <Contacts />
       <Map />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

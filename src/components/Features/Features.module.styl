@@ -1,0 +1,54 @@
+// Variables
+$background = var(--color-background)
+$backgroundLight = var(--color-background-light)
+$accent = var(--color-accent)
+$textLight = var(--color-text-light)
+$shadow = var(--color-shadow)
+$shadowHover = var(--color-shadow-hover)
+
+.features
+  background $background
+
+.featuresGrid
+  display grid
+  grid-template-columns repeat(3, 1fr)
+  gap 40px
+
+.featureCard
+  background $backgroundLight
+  padding 40px 30px
+  border-radius 10px
+  text-align center
+  box-shadow 0 4px 15px $shadow
+  transition transform 0.3s ease, box-shadow 0.3s ease
+
+  &:hover
+    transform translateY(-5px)
+    box-shadow 0 8px 25px $shadowHover
+
+.featureIcon
+  font-size 48px
+  margin-bottom 20px
+
+.featureCard h3
+  font-size 24px
+  margin-bottom 15px
+  color $accent
+
+.featureCard p
+  color $textLight
+  line-height 1.8
+
+@media (max-width: 968px)
+  .featuresGrid
+    grid-template-columns repeat(2, 1fr)
+    gap 30px
+
+@media (max-width: 768px)
+  .featuresGrid
+    grid-template-columns 1fr
+    gap 25px
+
+  .featureCard
+    padding 30px 20px
+

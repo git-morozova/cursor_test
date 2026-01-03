@@ -1,0 +1,151 @@
+// Variables
+$accent = var(--color-accent)
+$accentHover = var(--color-accent-hover)
+$white = var(--color-white)
+$backgroundLight = var(--color-background-light)
+$backgroundSection = var(--color-background-section)
+$textPrimary = var(--color-text-primary)
+$shadow = var(--color-shadow)
+$shadowHover = var(--color-shadow-hover)
+
+.topBar
+  background $accent
+  color $white
+  padding 8px 20px
+  font-size 14px
+
+.topBarContent
+  max-width 1200px
+  padding 0 20px
+  margin 0 auto
+  display flex
+  justify-content space-between
+  align-items center
+  flex-wrap wrap
+  gap 15px
+
+.header
+  background $backgroundLight
+  box-shadow 0 2px 10px $shadow
+  position sticky
+  top 0
+  z-index 1000
+  transition all 0.3s ease
+
+  &.scrolled
+    box-shadow 0 4px 20px $shadowHover
+
+.headerContainer
+  max-width 1200px
+  margin 0 auto
+  padding 15px 20px
+  display flex
+  justify-content space-between
+  align-items center
+
+.logo
+  font-size 24px
+  font-weight bold
+  color $accent
+
+.nav
+  display flex
+  align-items center
+  gap 30px
+
+  a
+    color $textPrimary
+    font-weight 500
+    transition color 0.3s ease
+
+    &:hover
+      color $accent
+
+.btnAppointment
+  background $accent
+  color $white
+  padding 10px 20px
+  border-radius 5px
+  font-weight 600
+  transition background 0.3s ease
+
+  &:hover
+    background $accentHover
+
+.socialIcons
+  display flex
+  gap 15px
+  align-items center
+
+  a
+    color $textPrimary
+    transition color 0.3s ease
+
+    &:hover
+      color $accent
+
+.burgerMenu
+  display none
+  flex-direction column
+  gap 5px
+  background none
+  padding 5px
+
+  span
+    width 25px
+    height 3px
+    background $textPrimary
+    transition all 0.3s ease
+
+  &.active
+    span:nth-child(1)
+      transform rotate(45deg) translate(8px, 8px)
+
+    span:nth-child(2)
+      opacity 0
+
+    span:nth-child(3)
+      transform rotate(-45deg) translate(7px, -7px)
+
+@media (max-width: 768px)
+  .topBarContent
+    flex-direction column
+    text-align center
+    font-size 12px
+
+  .burgerMenu
+    display flex
+
+  .nav
+    position fixed
+    top 0
+    right -100%
+    width 80%
+    max-width 300px
+    height 100vh
+    background $backgroundLight
+    flex-direction column
+    align-items flex-start
+    padding 80px 30px 30px
+    box-shadow -2px 0 10px $shadow
+    transition right 0.3s ease
+    gap 20px
+
+    &.open
+      right 0
+
+    a
+      font-size 18px
+      width 100%
+      padding 10px 0
+      border-bottom 1px solid $backgroundSection
+
+  .btnAppointment
+    width 100%
+    margin-top 10px
+
+  .socialIcons
+    margin-top 20px
+    width 100%
+    justify-content flex-start
+

@@ -1,0 +1,124 @@
+// Variables
+$background = var(--color-background)
+$accent = var(--color-accent)
+$backgroundLight = var(--color-background-light)
+$shadow = var(--color-shadow)
+$shadowHover = var(--color-shadow-hover)
+
+.beforeAfter
+  background $background
+
+.beforeAfterTitle
+  font-size 36px
+  margin-bottom 40px
+  color $accent
+  text-align center
+
+.beforeAfterCarousel
+  position relative
+  max-width 1000px
+  margin 0 auto
+
+.carouselContainer
+  overflow hidden
+  border-radius 10px
+
+.carouselTrack
+  display flex
+  transition transform 0.5s ease
+
+.carouselSlide
+  min-width 100%
+
+.beforeAfterPair
+  display grid
+  grid-template-columns 1fr 1fr
+  gap 20px
+  padding 20px
+
+.beforeAfterItem
+  position relative
+  border-radius 10px
+  overflow hidden
+  box-shadow 0 4px 15px $shadow
+
+  .label
+    position absolute
+    top 15px
+    left 15px
+    background rgba(0, 0, 0, 0.7)
+    color #fff
+    padding 8px 15px
+    border-radius 5px
+    font-weight 600
+    z-index 5
+
+  img
+    width 100%
+    height auto
+    display block
+
+.carouselBtn
+  position absolute
+  top 50%
+  transform translateY(-50%)
+  background rgba(255, 255, 255, 0.9)
+  border none
+  width 50px
+  height 50px
+  border-radius 50%
+  font-size 30px
+  color $accent
+  cursor pointer
+  z-index 10
+  transition all 0.3s ease
+  box-shadow 0 2px 10px $shadow
+
+  &:hover
+    background $backgroundLight
+    box-shadow 0 4px 15px $shadowHover
+
+  &.prev
+    left -25px
+
+  &.next
+    right -25px
+
+.carouselDots
+  display flex
+  justify-content center
+  gap 10px
+  margin-top 30px
+
+.dot
+  width 12px
+  height 12px
+  border-radius 50%
+  border none
+  background #ccc
+  cursor pointer
+  transition all 0.3s ease
+
+  &.active
+    background $accent
+    transform scale(1.2)
+
+@media (max-width: 768px)
+  .beforeAfterTitle
+    font-size 28px
+
+  .beforeAfterPair
+    grid-template-columns 1fr
+    gap 15px
+
+  .carouselBtn
+    width 40px
+    height 40px
+    font-size 24px
+
+    &.prev
+      left -20px
+
+    &.next
+      right -20px
+

@@ -1,0 +1,88 @@
+// Variables
+$background = var(--color-background)
+$backgroundLight = var(--color-background-light)
+$accent = var(--color-accent)
+$accentHover = var(--color-accent-hover)
+$textSecondary = var(--color-text-secondary)
+$shadow = var(--color-shadow)
+
+.contacts
+  background $background
+
+.contactsContent
+  max-width 800px
+  margin 0 auto
+  text-align center
+
+  h2
+    font-size 36px
+    margin-bottom 40px
+    color $accent
+
+.contactsInfo
+  background $backgroundLight
+  padding 40px
+  border-radius 10px
+  box-shadow 0 4px 15px $shadow
+  margin-bottom 30px
+
+.contactItem
+  font-size 18px
+  margin-bottom 20px
+  color $textSecondary
+
+  &:last-child
+    margin-bottom 0
+
+.phoneLink
+  color $accent
+  font-size 24px
+  font-weight bold
+  margin-left 10px
+  transition color 0.3s ease
+
+  &:hover
+    color $accentHover
+    text-decoration underline
+
+.contactsWarning
+  background #fff3cd
+  border 2px solid #ffc107
+  border-radius 10px
+  padding 25px
+  text-align left
+
+  p
+    font-size 16px
+    line-height 1.8
+    color #856404
+    margin-bottom 15px
+
+    &:last-child
+      margin-bottom 0
+
+  strong
+    color #856404
+
+@media (max-width: 768px)
+  .contactsContent h2
+    font-size 28px
+
+  .contactsInfo
+    padding 30px 20px
+
+  .contactItem
+    font-size 16px
+
+  .phoneLink
+    font-size 20px
+    display block
+    margin-left 0
+    margin-top 10px
+
+  .contactsWarning
+    padding 20px
+
+    p
+      font-size 14px
+

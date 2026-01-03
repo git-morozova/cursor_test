@@ -1,0 +1,63 @@
+// Variables
+$background = var(--color-background)
+$accent = var(--color-accent)
+$textSecondary = var(--color-text-secondary)
+$shadow = var(--color-shadow)
+
+.about
+  background $background
+
+.aboutContent
+  display flex
+  flex-direction column
+  gap 50px
+
+.aboutText,
+.aboutWhy
+  max-width 900px
+  margin 0 auto
+
+  h2
+    font-size 36px
+    margin-bottom 25px
+    color $accent
+    text-align center
+
+  p
+    font-size 18px
+    line-height 1.8
+    color $textSecondary
+    margin-bottom 20px
+    text-align justify
+
+.aboutImages
+  display grid
+  grid-template-columns repeat(2, 1fr)
+  gap 20px
+  max-width 1000px
+  margin 0 auto
+
+  img
+    width 100%
+    height auto
+    border-radius 10px
+    box-shadow 0 4px 15px $shadow
+    transition transform 0.3s ease
+
+    &:hover
+      transform scale(1.05)
+
+@media (max-width: 768px)
+  .aboutText h2,
+  .aboutWhy h2
+    font-size 28px
+
+  .aboutText p,
+  .aboutWhy p
+    font-size 16px
+    text-align left
+
+  .aboutImages
+    grid-template-columns 1fr
+    gap 15px
+

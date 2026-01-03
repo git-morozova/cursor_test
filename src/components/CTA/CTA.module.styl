@@ -1,0 +1,41 @@
+// Variables
+$accent = var(--color-accent)
+$accentDark = var(--color-accent-dark)
+$white = var(--color-white)
+$backgroundLight = var(--color-background-light)
+$background = var(--color-background)
+
+.cta
+  background linear-gradient(135deg, $accent 0%, $accentDark 100%)
+  color $white
+  text-align center
+
+.ctaContent
+  max-width 800px
+  margin 0 auto
+
+  h2
+    font-size 36px
+    margin-bottom 25px
+
+  p
+    font-size 18px
+    line-height 1.8
+    margin-bottom 20px
+
+  .btnPrimary
+    margin-top 30px
+    background $backgroundLight
+    color $accent
+
+    &:hover
+      background $background
+      transform translateY(-2px)
+
+@media (max-width: 768px)
+  .ctaContent h2
+    font-size 28px
+
+  .ctaContent p
+    font-size 16px
+

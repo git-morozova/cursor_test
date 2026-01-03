@@ -1,0 +1,33 @@
+// Variables
+$background = var(--color-background)
+$accent = var(--color-accent)
+$textSecondary = var(--color-text-secondary)
+
+.services
+  background $background
+
+.servicesContent
+  max-width 900px
+  margin 0 auto
+
+  h2
+    font-size 36px
+    margin-bottom 30px
+    color $accent
+    text-align center
+
+.servicesText p
+  font-size 18px
+  line-height 1.8
+  color $textSecondary
+  margin-bottom 20px
+  text-align justify
+
+@media (max-width: 768px)
+  .servicesContent h2
+    font-size 28px
+
+  .servicesText p
+    font-size 16px
+    text-align left
+

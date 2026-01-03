@@ -1,0 +1,25 @@
+// Variables
+$background = var(--color-background)
+$shadow = var(--color-shadow)
+
+.mapSection
+  width 100%
+  background $background
+
+.mapContainer
+  width 100%
+  max-width 1200px
+  margin 0 auto
+  padding 0 20px 60px
+
+  iframe
+    border-radius 10px
+    box-shadow 0 4px 15px $shadow
+
+@media (max-width: 768px)
+  .mapContainer
+    padding 0 15px 40px
+
+    iframe
+      height 400px
+

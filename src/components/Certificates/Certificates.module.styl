@@ -1,0 +1,104 @@
+// Variables
+$background = var(--color-background)
+$backgroundLight = var(--color-background-light)
+$accent = var(--color-accent)
+$shadow = var(--color-shadow)
+$shadowHover = var(--color-shadow-hover)
+
+.certificates
+  background $background
+
+.certificatesTitle
+  font-size 36px
+  margin-bottom 40px
+  color $accent
+  text-align center
+
+.certificatesCarousel
+  position relative
+  max-width 800px
+  margin 0 auto
+
+  &.visible
+    opacity 1
+
+.carouselContainer
+  overflow hidden
+  border-radius 10px
+  box-shadow 0 4px 15px $shadow
+
+.carouselTrack
+  display flex
+  transition transform 0.5s ease
+  width 100%
+
+.carouselSlide
+  min-width 100%
+  flex-shrink 0
+
+  img
+    width 100%
+    height auto
+    display block
+    opacity 1
+
+.carouselBtn
+  position absolute
+  top 50%
+  transform translateY(-50%)
+  background rgba(255, 255, 255, 0.9)
+  border none
+  width 50px
+  height 50px
+  border-radius 50%
+  font-size 30px
+  color $accent
+  cursor pointer
+  z-index 10
+  transition all 0.3s ease
+  box-shadow 0 2px 10px $shadow
+
+  &:hover
+    background $backgroundLight
+    box-shadow 0 4px 15px $shadowHover
+
+  &.prev
+    left -25px
+
+  &.next
+    right -25px
+
+.carouselDots
+  display flex
+  justify-content center
+  gap 10px
+  margin-top 30px
+
+.dot
+  width 12px
+  height 12px
+  border-radius 50%
+  border none
+  background #ccc
+  cursor pointer
+  transition all 0.3s ease
+
+  &.active
+    background $accent
+    transform scale(1.2)
+
+@media (max-width: 768px)
+  .certificatesTitle
+    font-size 28px
+
+  .carouselBtn
+    width 40px
+    height 40px
+    font-size 24px
+
+    &.prev
+      left -20px
+
+    &.next
+      right -20px
+
